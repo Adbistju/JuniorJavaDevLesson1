@@ -2,7 +2,7 @@ package adbistju.system.two;
 
 abstract class Car {
     public Engine engine;
-    private String color;
+    private Color color;
     private String name;
 
 
@@ -12,6 +12,8 @@ abstract class Car {
 
     abstract void open();
 
+    abstract void close();
+
     public Engine getEngine() {
         return engine;
     }
@@ -20,11 +22,11 @@ abstract class Car {
         this.engine = engine;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
